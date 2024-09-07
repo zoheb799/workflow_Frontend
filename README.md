@@ -9,3 +9,7 @@ Currently, two official plugins are available:
 
 
 
+for running this application  first clone it and npm i 
+and then check the port localhost:3000 for the ui 
+i have added the proxy 5000 for the backend so u can now register and use this aapplication
+this application is sully responsive.
