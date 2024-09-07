@@ -1,0 +1,153 @@
+.dndflow {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+}
+
+.dndflow aside {
+  border-right: 1px solid #eee;
+  padding: 15px 10px;
+  font-size: 12px;
+  background: #fcfcfc;
+}
+
+.dndflow aside .description {
+  margin-bottom: 10px;
+}
+
+.dndflow .dndnode {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #1a192b;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: grab;
+}
+
+.dndflow .reactflow-wrapper {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dndflow .selectall {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .dndflow {
+      flex-direction: row;
+      flex-direction: row-reverse;
+  }
+
+  .dndflow aside {
+      max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .dndflow {
+      flex-direction: column;
+  }
+
+  .dndflow aside {
+      width: 100%;
+      order: 2;
+      margin-top: 20px;
+  }
+
+  .dndflow .reactflow-wrapper {
+      order: 3;
+  }
+
+  .dndflow .top-controls {
+      order: 1;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+  }
+
+  .dndflow .top-controls .workflow-id,
+  .dndflow .top-controls .save-button {
+      flex: 1;
+      margin: 0 5px;
+  }
+}
+
+.react-flow__node-output, .react-flow__node-group {
+  padding: 4px;
+  border-radius: 3px;
+  width: 100px;
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1a192b;
+  background-color: white;
+}
+
+.react-flow__node-input {
+  padding: 4px;
+  border-radius: 3px;
+  width: 100px;
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1a192b;
+  background-color: white;
+}
+
+.react-flow__node-default {
+  padding: 4px;
+  border-radius: 3px;
+  width: 100px;
+  font-size: 10px;
+  color: #222;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #1a192b;
+  background-color: white;
+}
+
+.btn {
+  background-color: #fcfcfc;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+  border: #eee;
+  color: #222;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+input {
+  margin-top: 15px;
+  height: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  padding: 5px;
+}
+
+label {
+  color: white;
+}
+
+.nodepanel {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
